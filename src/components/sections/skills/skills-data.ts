@@ -18,7 +18,10 @@ import {
   SiGit,
   SiStorybook,
   SiJest,
-  SiPuppeteer
+  SiPuppeteer,
+  SiPnpm,
+  SiNodedotjs,
+  SiYarn
 } from 'react-icons/si';
 
 import { FaAngular } from "react-icons/fa";
@@ -31,6 +34,7 @@ export const skillsList = [
   { name: "CSS3", Icon: SiCss3 },
   { name: "JavaScript", Icon: SiJavascript },
   { name: "TypeScript", Icon: SiTypescript },
+  { name: "Node.js", Icon: SiNodedotjs },
   { name: "Styled Components", Icon: SiStyledcomponents },
   { name: "React Query", Icon: SiReactquery },
   { name: "Webpack", Icon: SiWebpack },
@@ -44,5 +48,7 @@ export const skillsList = [
   { name: "Git", Icon: SiGit },
   { name: "Storybook", Icon: SiStorybook },
   { name: "Jest", Icon: SiJest },
-  { name: "Puppeteer", Icon: SiPuppeteer }
+  { name: "Puppeteer", Icon: SiPuppeteer },
+  { name: "PNPM", Icon: SiPnpm },
+  { name: "Yarn", Icon: SiYarn }
 ];
