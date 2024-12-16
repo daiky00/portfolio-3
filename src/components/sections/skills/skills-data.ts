@@ -1,20 +1,41 @@
-export const skillsList = [
-  { name: "Angular", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
-  { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
-  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-  { name: "Styled Components", icon: "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.jpg" },
-  { name: "React Query", icon: "https://raw.githubusercontent.com/TanStack/query/main/media/emblem-light.svg" },
-  { name: "Webpack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" },
-  { name: "Babel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" },
-  { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
-  { name: "Vite", icon: "https://vitejs.dev/logo.svg" },
-  { name: "Vitest", icon: "https://vitest.dev/logo.svg" },
-  { name: "Cypress", icon: "https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/logo/cypress-io-logo-round.svg" },
-  { name: "Nx", icon: "https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" },
-  { name: "Docker", icon: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" },
-  { name: "Git", icon: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" }
+import { StyledIcon } from '@styled-icons/styled-icon';
+import { Angular } from '@styled-icons/simple-icons/Angular';
+import { Vuejs } from '@styled-icons/boxicons-logos/Vuejs';
+import { ReactLogo } from '@styled-icons/simple-icons/ReactLogo';
+import { Html5 } from '@styled-icons/simple-icons/Html5';
+import { Css3 } from '@styled-icons/simple-icons/Css3';
+import { Javascript } from '@styled-icons/simple-icons/Javascript';
+import { Typescript } from '@styled-icons/simple-icons/Typescript';
+import { Styledcomponents } from '@styled-icons/simple-icons/Styledcomponents';
+import { Webpack } from '@styled-icons/simple-icons/Webpack';
+import { Babel } from '@styled-icons/simple-icons/Babel';
+import { Graphql } from '@styled-icons/simple-icons/Graphql';
+import { Vite } from '@styled-icons/simple-icons/Vite';
+import { Cypress } from '@styled-icons/simple-icons/Cypress';
+import { Nx } from '@styled-icons/simple-icons/Nx';
+import { Docker } from '@styled-icons/simple-icons/Docker';
+import { Git } from '@styled-icons/simple-icons/Git';
+
+interface Skill {
+  name: string;
+  Icon: StyledIcon;
+}
+
+export const skillsList: Skill[] = [
+  { name: "Angular", Icon: Angular },
+  { name: "Vue.js", Icon: Vuejs },
+  { name: "React", Icon: ReactLogo },
+  { name: "HTML5", Icon: Html5 },
+  { name: "CSS3", Icon: Css3 },
+  { name: "JavaScript", Icon: Javascript },
+  { name: "TypeScript", Icon: Typescript },
+  { name: "Styled Components", Icon: Styledcomponents },
+  { name: "Webpack", Icon: Webpack },
+  { name: "Babel", Icon: Babel },
+  { name: "GraphQL", Icon: Graphql },
+  { name: "Vite", Icon: Vite },
+  { name: "Cypress", Icon: Cypress },
+  { name: "Nx", Icon: Nx },
+  { name: "Docker", Icon: Docker },
+  { name: "Git", Icon: Git }
 ];

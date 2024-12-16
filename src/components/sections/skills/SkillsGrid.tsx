@@ -30,10 +30,12 @@ export function SkillsGrid() {
         <SkillCard
           key={tech.name}
           name={tech.name}
-          icon={tech.icon}
+          Icon={tech.Icon}
           variants={item}
         />
       ))}
     </motion.div>
   );
 }
+
+export default SkillsGrid;
