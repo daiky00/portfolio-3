@@ -12,6 +12,12 @@ import {
   Sun,
   DollarSign,
 } from 'lucide-react';
+import namimlSiteImage from '@/assets/namimlsite.jpg';
+import namimlLandingPageImage from '@/assets/namiml-landing-page.jpg';
+import namimlPaywallsImage from '@/assets/namiml-paywalls.jpg';
+import namiPaywallExampleImage from '@/assets/namiml-paywall-example.jpg';
+import namiPaywallExampleLightImage from '@/assets/namiml-paywall-example-light.jpg';
+import namiPaywallExampleDarkImage from '@/assets/namiml-paywall-example-dark.jpg';
 
 const container = {
   hidden: { opacity: 0 },
@@ -60,7 +66,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/namimlsite.jpg"
+                  src={namimlSiteImage}
                   alt="Nami ML Dashboard"
                   className="rounded-lg border w-full"
                 />
@@ -74,7 +80,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/namiml-landing-page.jpg"
+                  src={namimlLandingPageImage}
                   alt="Nami ML Landing Page"
                   className="rounded-lg border w-full"
                 />
@@ -88,7 +94,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/namiml-paywalls.jpg"
+                  src={namimlPaywallsImage}
                   alt="Nami Paywall Gallery"
                   className="rounded-lg border w-full"
                 />
@@ -101,7 +107,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/nami-paywall-example.jpg"
+                  src={namiPaywallExampleImage}
                   alt="Nami Paywall Example"
                   className="rounded-lg border w-full"
                 />
@@ -131,7 +137,7 @@ export function NamiDetails() {
                 <TabsContent value="light">
                   <MacbookFrame>
                     <img
-                      src="/src/assets/namiml-paywall-example-light.jpg"
+                      src={namiPaywallExampleLightImage}
                       alt="Nami Paywall Light Mode"
                       className="rounded-lg border w-full"
                     />
@@ -140,7 +146,7 @@ export function NamiDetails() {
                 <TabsContent value="dark">
                   <MacbookFrame>
                     <img
-                      src="/src/assets/namiml-paywall-example-dark.jpg"
+                      src={namiPaywallExampleDarkImage}
                       alt="Nami Paywall Dark Mode"
                       className="rounded-lg border w-full"
                     />

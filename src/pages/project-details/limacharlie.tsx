@@ -12,6 +12,11 @@ import {
   Zap
 } from "lucide-react";
 import { MacbookFrame } from "@/components/ui/macbook-frame";
+import limacharlieSiteImage from '@/assets/limacharliesite.jpg';
+import limacharlieAfterImage from '@/assets/limacharliesite-after.jpg';
+import limacharlieDarkImage from '@/assets/limacharliesite-after-dark.jpg';
+import limacharlieBrandingLightImage from '@/assets/limacharliesite-after-branding-light.jpg';
+import limacharlieBrandingDarkImage from '@/assets/limacharliesite-after-branding-dark.jpg';
 
 const container = {
   hidden: { opacity: 0 },
@@ -71,8 +76,8 @@ export function LimaCharlieDetails() {
                   </TabsList>
                   <TabsContent value="before">
                     <MacbookFrame>
-                      <img
-                        src="/src/assets/limacharliesite.jpg"
+                    <img
+                        src={limacharlieSiteImage}
                         alt="LimaCharlie Before"
                         className="rounded-lg border w-full"
                       />
@@ -80,9 +85,9 @@ export function LimaCharlieDetails() {
                   </TabsContent>
                   <TabsContent value="after">
                     <MacbookFrame>
-                      <img
-                        src="/src/assets/limacharliesite-after.jpg"
-                        alt="LimaCharlie After"
+                    <img
+                        src={limacharlieAfterImage}
+                        alt="Light Mode"
                         className="rounded-lg border w-full"
                       />
                     </MacbookFrame>
@@ -104,8 +109,8 @@ export function LimaCharlieDetails() {
                   </TabsList>
                   <TabsContent value="light">
                     <MacbookFrame>
-                      <img
-                        src="/src/assets/limacharliesite-after.jpg"
+                    <img
+                        src={limacharlieAfterImage}
                         alt="Light Mode"
                         className="rounded-lg border w-full"
                       />
@@ -113,8 +118,8 @@ export function LimaCharlieDetails() {
                   </TabsContent>
                   <TabsContent value="dark">
                     <MacbookFrame>
-                      <img
-                        src="/src/assets/limacharliesite-after-dark.jpg"
+                    <img
+                        src={limacharlieDarkImage}
                         alt="Dark Mode"
                         className="rounded-lg border w-full"
                       />
@@ -138,19 +143,19 @@ export function LimaCharlieDetails() {
                   <TabsContent value="light">
                     <MacbookFrame>
                     <img
-                      src="/src/assets/limacharliesite-after-branding-light.jpg"
-                      alt="White Label Light"
-                      className="rounded-lg border w-full"
-                    />
+                        src={limacharlieBrandingLightImage}
+                        alt="White Label Light"
+                        className="rounded-lg border w-full"
+                      />
                     </MacbookFrame>
                   </TabsContent>
                   <TabsContent value="dark">
                     <MacbookFrame>
                     <img
-                      src="/src/assets/limacharliesite-after-branding-dark.jpg"
-                      alt="White Label Dark"
-                      className="rounded-lg border w-full"
-                    />
+                        src={limacharlieBrandingDarkImage}
+                        alt="White Label Dark"
+                        className="rounded-lg border w-full"
+                      />
                     </MacbookFrame>
                   </TabsContent>
                 </Tabs>

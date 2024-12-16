@@ -9,6 +9,7 @@ import {
   BarChart,
   Laptop
 } from "lucide-react";
+import hiltiSiteImage from '@/assets/hiltisite.jpg';
 
 const container = {
   hidden: { opacity: 0 },
@@ -55,7 +56,7 @@ export function HiltiDetails() {
             <Card className="p-6">
               <MacbookFrame>
               <img
-                src="/src/assets/hiltisite.jpg"
+                src={hiltiSiteImage}
                 alt="Ask Hilti Platform"
                 className="rounded-lg border w-full"
               />

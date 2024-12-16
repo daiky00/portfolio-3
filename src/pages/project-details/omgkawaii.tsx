@@ -4,6 +4,9 @@ import { Card } from "@/components/ui/card";
 import { MacbookFrame } from "@/components/ui/macbook-frame";
 import { MobileFrame } from "@/components/ui/mobile-frame";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import omgkawaiiBeforeImage from '@/assets/omgkawaiisite.jpg';
+import omgkawaiiAfterImage from '@/assets/omgkawaiisite-after.jpg';
+import omgkawaiiMobileImage from '@/assets/omgkawaiisite-mobile.jpg';
 import { 
   Palette,
   Smartphone,
@@ -65,7 +68,7 @@ export function OmgKawaiiDetails() {
                 <TabsContent value="before">
                   <MacbookFrame>
                   <img
-                    src="/src/assets/omgkawaiisite.jpg"
+                    src={omgkawaiiBeforeImage}
                     alt="OMG Kawaii Original Website"
                     className="rounded-lg border w-full"
                   />
@@ -74,7 +77,7 @@ export function OmgKawaiiDetails() {
                 <TabsContent value="after">
                   <MacbookFrame>
                   <img
-                    src="/src/assets/omgkawaiisite-after.jpg"
+                    src={omgkawaiiAfterImage}
                     alt="OMG Kawaii New Website"
                     className="rounded-lg border w-full"
                   />
@@ -91,7 +94,7 @@ export function OmgKawaiiDetails() {
               <div className="flex items-center justify-center min-h-[700px] bg-gradient-to-br from-pink-100/50 via-purple-100/30 to-blue-100/50 dark:from-pink-950/30 dark:via-purple-950/20 dark:to-blue-950/30 rounded-lg p-8" style={{ perspective: '1000px' }}>
                 <MobileFrame>
                   <img
-                    src="/src/assets/omgkawaiisite-mobile.jpg"
+                    src={omgkawaiiMobileImage}
                     alt="OMG Kawaii Mobile App"
                     style={{
                       width: '100%',
