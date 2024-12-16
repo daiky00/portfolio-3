@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { StyledIcon } from '@styled-icons/styled-icon';
+import { IconType } from 'react-icons';
 
 interface SkillCardProps {
   name: string;
-  Icon: StyledIcon;
+  Icon: IconType;
   variants: any;
 }
 
@@ -18,7 +18,7 @@ export function SkillCard({ name, Icon, variants }: SkillCardProps) {
             whileHover={{ scale: 1.1 }}
             className="p-4 rounded-xl bg-card hover:bg-accent flex items-center justify-center relative group"
           >
-            <Icon size={32} />
+            <Icon className="h-8 w-8" />
           </motion.div>
         </TooltipTrigger>
         <TooltipContent>{name}</TooltipContent>
