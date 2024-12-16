@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import AudioPlayer from 'react-h5-audio-player';
+import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player';
 import { useState, useRef } from 'react';
 import { AudioVisualizer } from '@/components/audio/AudioVisualizer';
 import 'react-h5-audio-player/lib/styles.css';
@@ -26,14 +26,14 @@ export function MusicPlayer() {
             layout="horizontal"
             className="rhap_container flex-1"
             customProgressBarSection={[
-              'CURRENT_TIME',
-              'PROGRESS_BAR',
-              'DURATION'
+              RHAP_UI.CURRENT_TIME,
+              RHAP_UI.PROGRESS_BAR,
+              RHAP_UI.DURATION
             ]}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
             customControlsSection={[
-              'MAIN_CONTROLS',
+              RHAP_UI.MAIN_CONTROLS,
               <div key="visualizer" className="flex-1 h-8 mx-2">
                 {playerRef.current?.audio?.current && (
                   <AudioVisualizer
@@ -43,7 +43,7 @@ export function MusicPlayer() {
                   />
                 )}
               </div>,
-              'VOLUME_CONTROLS'
+              RHAP_UI.VOLUME_CONTROLS
             ]}
           />
         </div>

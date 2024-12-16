@@ -11,7 +11,6 @@ import {
   Shield,
   Zap
 } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { MacbookFrame } from "@/components/ui/macbook-frame";
 
 const container = {

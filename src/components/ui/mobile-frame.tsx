@@ -1,15 +1,30 @@
+import React from 'react';
 import styled from 'styled-components';
+
+interface ContainerProps {
+  $width?: number;
+}
+
+const Container = styled.div<ContainerProps>`
+  position: relative;
+  width: clamp(200px, 90vw, 280px);
+  margin: 20px;
+  
+  .scale-wrapper {
+    transform-origin: top left;
+    transform: scale(${props => Math.min(1, (props.$width || 280) / 280)});
+  }
+`;
 
 const Frame = styled.div`
   position: relative;
   width: 280px;
   height: 560px;
-  margin: 20px;
 `;
 
 const OuterFrame = styled.div`
   position: absolute;
-  top: 0;
+  top: -16px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -34,8 +49,8 @@ const Notch = styled.div`
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 144px;
-  height: 24px;
+  width: 120px;
+  height: 18px;
   background-color: #000000;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -52,7 +67,7 @@ const Screen = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 0;
   overflow: hidden;
 `;
 
@@ -84,19 +99,38 @@ interface MobileFrameProps {
 }
 
 export function MobileFrame({ children, className }: MobileFrameProps) {
+  const [containerWidth, setContainerWidth] = React.useState(280);
+  const containerRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const updateWidth = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth);
+      }
+    };
+
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
   return (
-    <Frame className={className}>
-      <OuterFrame>
-        <InnerFrame>
-          <Notch />
-          <Screen>
-            {children}
-          </Screen>
-        </InnerFrame>
-        <SideButton />
-        <VolumeButton position="up" />
-        <VolumeButton position="down" />
-      </OuterFrame>
-    </Frame>
+    <Container ref={containerRef} className={className} $width={containerWidth}>
+      <div className="scale-wrapper">
+        <Frame>
+          <OuterFrame>
+            <InnerFrame>
+              <Notch />
+              <Screen>
+                {children}
+              </Screen>
+            </InnerFrame>
+            <SideButton />
+            <VolumeButton position="up" />
+            <VolumeButton position="down" />
+          </OuterFrame>
+        </Frame>
+      </div>
+    </Container>
   );
 }

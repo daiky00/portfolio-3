@@ -2,7 +2,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { Button } from "@/components/ui/button"
 import { Menu, Github, Linkedin } from "lucide-react"
 import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
+import { useState } from "react";
 
 interface MobileMenuProps {
   isActive: (path: string) => string;
