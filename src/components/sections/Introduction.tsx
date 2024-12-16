@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Dumbbell, Gamepad } from "lucide-react";
+import profileImage from '@/assets/profile-1.jpg';
 
 export function Introduction() {
   return (
@@ -20,7 +21,7 @@ export function Introduction() {
           >
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/10 bg-background">
               <img 
-                src="/src/assets/profile-1.jpg"
+                src={profileImage}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
