@@ -7,8 +7,8 @@ export const projects = [
     technologies: ["React", "TypeScript", "TanStack Query", 'TanStack Virtual', "TanStack Table", "Stripe", "Styled Components", "Vite", "Vitest", "pnpm", "Figma", "Storybook", "Node.js"],
     visitLink: "https://limacharlie.io",
     hasBeforeAfter: true,
-    beforeImage: "/src/assets/limacharliesite.png",
-    afterImage: "/src/assets/limacharliesite-after.png",
+    beforeImage: "/src/assets/limacharliesite.jpg",
+    afterImage: "/src/assets/limacharliesite-after.jpg",
     caseStudyPath: "/projects/limacharlie"
   },
     {
@@ -18,7 +18,7 @@ export const projects = [
     technologies: ["React", "TypeScript", "TanStack Query", "Recharts", "Tailwind CSS", "Vite", "Vitest", "Node.js"],
     visitLink: "https://namiml.com",
     hasBeforeAfter: true,
-    beforeImage: "/src/assets/namimlsite.png",
+    beforeImage: "/src/assets/namimlsite.jpg",
     caseStudyPath: "/projects/nami"
   },
   {
@@ -28,8 +28,8 @@ export const projects = [
     technologies: ["React", "React Native", "Styled Components", "TanStack Query", "Vite", "Vitest", "pnpm", "Figma", "Storybook", "Node.js"],
     visitLink: "https://omgkawaii.com",
     hasBeforeAfter: true,
-    beforeImage: "/src/assets/omgkawaiisite.png",
-    afterImage: "/src/assets/omgkawaiisite-after.png",
+    beforeImage: "/src/assets/omgkawaiisite.jpg",
+    afterImage: "/src/assets/omgkawaiisite-after.jpg",
     caseStudyPath: "/projects/omgkawaii"
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
     description: "Hilti was founded in 1941, and evolved from a small family company to the trusted global business we are today. Our aim is to build a better future.",
     technologies: ["Angular", "Typescript", "SCSS", "Cypress", "Storybook"],
     visitLink: "https://hilti.com",
-    beforeImage: "/src/assets/hiltisite.png",
+    beforeImage: "/src/assets/hiltisite.jpg",
     caseStudyPath: "/projects/hilti"
   },
   {
@@ -47,6 +47,6 @@ export const projects = [
     description: "Otakuchan.com is a retail experience created for fans of Anime, Games, Comics and Cartoons.",
     technologies: ["Next.js", "React", "Shopify", "TailwindCSS"],
     visitLink: "https://otakuchan.com",
-    beforeImage: "/src/assets/otakuchansite.png"
+    beforeImage: "/src/assets/otakuchansite.jpg"
   }
 ];

@@ -72,7 +72,7 @@ export function LimaCharlieDetails() {
                   <TabsContent value="before">
                     <MacbookFrame>
                       <img
-                        src="/src/assets/limacharliesite.png"
+                        src="/src/assets/limacharliesite.jpg"
                         alt="LimaCharlie Before"
                         className="rounded-lg border w-full"
                       />
@@ -81,7 +81,7 @@ export function LimaCharlieDetails() {
                   <TabsContent value="after">
                     <MacbookFrame>
                       <img
-                        src="/src/assets/limacharliesite-after.png"
+                        src="/src/assets/limacharliesite-after.jpg"
                         alt="LimaCharlie After"
                         className="rounded-lg border w-full"
                       />
@@ -105,7 +105,7 @@ export function LimaCharlieDetails() {
                   <TabsContent value="light">
                     <MacbookFrame>
                       <img
-                        src="/src/assets/limacharliesite-after.png"
+                        src="/src/assets/limacharliesite-after.jpg"
                         alt="Light Mode"
                         className="rounded-lg border w-full"
                       />
@@ -114,7 +114,7 @@ export function LimaCharlieDetails() {
                   <TabsContent value="dark">
                     <MacbookFrame>
                       <img
-                        src="/src/assets/limacharliesite-after-dark.png"
+                        src="/src/assets/limacharliesite-after-dark.jpg"
                         alt="Dark Mode"
                         className="rounded-lg border w-full"
                       />
@@ -138,7 +138,7 @@ export function LimaCharlieDetails() {
                   <TabsContent value="light">
                     <MacbookFrame>
                     <img
-                      src="/src/assets/limacharliesite-after-branding-light.png"
+                      src="/src/assets/limacharliesite-after-branding-light.jpg"
                       alt="White Label Light"
                       className="rounded-lg border w-full"
                     />
@@ -147,7 +147,7 @@ export function LimaCharlieDetails() {
                   <TabsContent value="dark">
                     <MacbookFrame>
                     <img
-                      src="/src/assets/limacharliesite-after-branding-dark.png"
+                      src="/src/assets/limacharliesite-after-branding-dark.jpg"
                       alt="White Label Dark"
                       className="rounded-lg border w-full"
                     />

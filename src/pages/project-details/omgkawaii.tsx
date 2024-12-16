@@ -65,7 +65,7 @@ export function OmgKawaiiDetails() {
                 <TabsContent value="before">
                   <MacbookFrame>
                   <img
-                    src="/src/assets/omgkawaiisite.png"
+                    src="/src/assets/omgkawaiisite.jpg"
                     alt="OMG Kawaii Original Website"
                     className="rounded-lg border w-full"
                   />
@@ -74,7 +74,7 @@ export function OmgKawaiiDetails() {
                 <TabsContent value="after">
                   <MacbookFrame>
                   <img
-                    src="/src/assets/omgkawaiisite-after.png"
+                    src="/src/assets/omgkawaiisite-after.jpg"
                     alt="OMG Kawaii New Website"
                     className="rounded-lg border w-full"
                   />
@@ -91,7 +91,7 @@ export function OmgKawaiiDetails() {
               <div className="flex items-center justify-center min-h-[700px] bg-gradient-to-br from-pink-100/50 via-purple-100/30 to-blue-100/50 dark:from-pink-950/30 dark:via-purple-950/20 dark:to-blue-950/30 rounded-lg p-8" style={{ perspective: '1000px' }}>
                 <MobileFrame>
                   <img
-                    src="/src/assets/omgkawaiisite-mobile.png"
+                    src="/src/assets/omgkawaiisite-mobile.jpg"
                     alt="OMG Kawaii Mobile App"
                     style={{
                       width: '100%',

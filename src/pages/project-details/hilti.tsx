@@ -55,7 +55,7 @@ export function HiltiDetails() {
             <Card className="p-6">
               <MacbookFrame>
               <img
-                src="/src/assets/hiltisite.png"
+                src="/src/assets/hiltisite.jpg"
                 alt="Ask Hilti Platform"
                 className="rounded-lg border w-full"
               />

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import omgkawaii from '@/assets/omgkawaii.png';
+import omgkawaii from '@/assets/omgkawaii.jpg';
 import limacharlieLogo from '@/assets/limacharlie-logo.jpg';
 import namimlLogo from '@/assets/namiml-logo.jpg';
 import steelperlotLogo from '@/assets/steelperlot-logo.jpg';

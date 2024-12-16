@@ -6,7 +6,7 @@ export const skillsList = [
   { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-  { name: "Styled Components", icon: "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" },
+  { name: "Styled Components", icon: "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.jpg" },
   { name: "React Query", icon: "https://raw.githubusercontent.com/TanStack/query/main/media/emblem-light.svg" },
   { name: "Webpack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" },
   { name: "Babel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" },

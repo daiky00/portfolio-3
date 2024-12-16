@@ -60,7 +60,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/namimlsite.png"
+                  src="/src/assets/namimlsite.jpg"
                   alt="Nami ML Dashboard"
                   className="rounded-lg border w-full"
                 />
@@ -74,7 +74,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/namiml-landing-page.png"
+                  src="/src/assets/namiml-landing-page.jpg"
                   alt="Nami ML Landing Page"
                   className="rounded-lg border w-full"
                 />
@@ -88,7 +88,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/namiml-paywalls.png"
+                  src="/src/assets/namiml-paywalls.jpg"
                   alt="Nami Paywall Gallery"
                   className="rounded-lg border w-full"
                 />
@@ -101,7 +101,7 @@ export function NamiDetails() {
             <Card className="p-6">
               <MacbookFrame>
                 <img
-                  src="/src/assets/nami-paywall-example.png"
+                  src="/src/assets/nami-paywall-example.jpg"
                   alt="Nami Paywall Example"
                   className="rounded-lg border w-full"
                 />
@@ -131,7 +131,7 @@ export function NamiDetails() {
                 <TabsContent value="light">
                   <MacbookFrame>
                     <img
-                      src="/src/assets/namiml-paywall-example-light.png"
+                      src="/src/assets/namiml-paywall-example-light.jpg"
                       alt="Nami Paywall Light Mode"
                       className="rounded-lg border w-full"
                     />
@@ -140,7 +140,7 @@ export function NamiDetails() {
                 <TabsContent value="dark">
                   <MacbookFrame>
                     <img
-                      src="/src/assets/namiml-paywall-example-dark.png"
+                      src="/src/assets/namiml-paywall-example-dark.jpg"
                       alt="Nami Paywall Dark Mode"
                       className="rounded-lg border w-full"
                     />
