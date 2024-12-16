@@ -1,5 +1,4 @@
 import { 
-  SiAngular,
   SiVuedotjs,
   SiReact,
   SiHtml5,
@@ -22,8 +21,10 @@ import {
   SiPuppeteer
 } from 'react-icons/si';
 
+import { FaAngular } from "react-icons/fa";
+
 export const skillsList = [
-  { name: "Angular", Icon: SiAngular },
+  { name: "Angular", Icon: FaAngular },
   { name: "Vue.js", Icon: SiVuedotjs },
   { name: "React", Icon: SiReact },
   { name: "HTML5", Icon: SiHtml5 },
