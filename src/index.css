@@ -250,9 +250,9 @@ body {
   height: 12px !important;
   margin-left: -4px !important;
   top: -5px !important;
-  background: hsl(var(--primary)) !important;
+  background: hsl(var(--foreground)) !important;
+  opacity: 0.7 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
-  opacity: 0 !important;
   transition: opacity 0.2s ease !important;
 }
 
