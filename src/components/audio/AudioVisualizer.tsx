@@ -11,11 +11,11 @@ const MIN_HEIGHT = 4;
 
 export function AudioVisualizer({ audio, isPlaying, className }: AudioVisualizerProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const audioContextRef = useRef<AudioContext>();
-  const sourceRef = useRef<MediaElementAudioSourceNode>();
-  const analyzerRef = useRef<AnalyserNode>();
-  const rafRef = useRef<number>();
-  const barWidth = useRef(0);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const sourceRef = useRef<MediaElementAudioSourceNode | null>(null);
+  const analyzerRef = useRef<AnalyserNode | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const barWidth = useRef<number>(0);
 
   useEffect(() => {
     if (!audio || !canvasRef.current) return;
@@ -111,7 +111,7 @@ export function AudioVisualizer({ audio, isPlaying, className }: AudioVisualizer
     <canvas
       ref={canvasRef}
       className={className}
-      style={{ opacity: isPlaying ? 0.8 : 0.3 }}
+      style={{ width: '100%', height: '100%', opacity: isPlaying ? 0.8 : 0.3 }}
     />
   );
 }
