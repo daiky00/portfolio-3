@@ -89,10 +89,11 @@
   "engines": {
     "node": ">=18.20.0"
   },
- "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": ["react", "react-dom"],
-      "allowAny": ["react", "react-dom"]
+  "packageManager": "pnpm@8.15.6",
+  "pnpm": {
+      "peerDependencyRules": {
+        "ignoreMissing": ["react", "react-dom"],
+        "allowAny": ["react", "react-dom"]
+      }
     }
-  }
 }
